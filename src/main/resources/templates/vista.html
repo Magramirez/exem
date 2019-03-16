@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="../static/css/estilo.css" th:href="@{../css/estilo.css}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Registro de citas medicas</title>
+
+
+</head>
+
+<body>
+
+<header>
+    <h1>Registrar Cita</h1>
+</header>
+
+<div class="container" id="header">
+    <form action="/plantilla"  th:action="@{datos}"  th:object="${Datos}" method="post">
+        <label>Nombre del Paciente: </label>
+        <input type="text" th:field="*{nomP}" placeholder="Ingrese tu nombre" name="commenter_name"/><p>  </p><p>  </p><p>  </p>
+        <label>Asunto: </label>
+        <input type="text" th:field="*{Asun}" placeholder="Ingrese el asunto" name="comment_text" /><p>  </p><p>  </p><p>  </p>
+        <label>Nombre del Doctor: </label>
+        <select th:field="*{nomD}">
+            <option value="Dra. Ramirez" >Dra. Ramirez</option>
+            <option value="Dr. Mendoza">Dr.Mendoza</option>
+            <option value="Dra. Suarez">Dra. Suarez</option>
+            <option value="Dra. Aveiro">Dra. Aveiro</option>
+        </select><p>  </p><p>  </p><p>  </p>
+
+        <label>Telefono: </label>
+        <input type="text" th:field="*{telel}" placeholder="Ingrese el telefono" name="commenter_name"><p>  </p><p>  </p><p>  </p>
+        <label>Coreo: </label>
+        <input type="text" th:field="*{corre}" placeholder="Ingrese el correo" name="commenter_name"><p>  </p><p>  </p><p>  </p>
+
+        <label>Fecha: </label>
+        <input type="date" th:field="*{fecha}"><p>  </p><p>  </p><p>  </p>
+        </select><p>  </p><p>  </p><p>  </p>
+        <label>Hora: </label>
+        <input type="time" th:field="*{hora}"><p>  </p><p>  </p><p>  </p>
+
+
+        <input type="submit" value="Guardar" />
+    </form>
+</div>
+
+
+</body>
+</html>

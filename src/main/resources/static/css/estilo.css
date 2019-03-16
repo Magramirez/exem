@@ -1,0 +1,31 @@
+body{
+	background-color:#A9F5F2;
+
+}
+
+h1{
+	font-size:36px;
+	color:#FFFFFF;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:center;
+	height:50px;
+	background-color:#2E9AFE;
+}
+h3{
+
+}
+
+
+#header {
+	font-size: 15px;
+	background: #65f5ae;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:left;
+}
+
+
+
+
+.dii.h3{
+	width: 50%;
+}
